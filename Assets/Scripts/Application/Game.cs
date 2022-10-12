@@ -24,6 +24,7 @@
         private UserInterface _ui;
 
         private int _score;
+        private int _level;
 
         [SerializeField]
         LevelController _levelController;
@@ -104,6 +105,13 @@
                 _ui.UpdateScore(0);
             }
         }
+
+        public void UpdateLevel(int level)
+        {
+            _level = level;
+            _ui.UpdateLevel(_level);
+        }
+
 
         public void SetGameStatus(GameStatus status)
         {

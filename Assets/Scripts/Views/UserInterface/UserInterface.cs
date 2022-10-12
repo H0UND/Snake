@@ -50,4 +50,9 @@ public class UserInterface : MonoBehaviour
     {
         _gameplayPanel?.UpdateScore(score);
     }
+
+    public void UpdateLevel(int level)
+    {
+        _gameplayPanel?.UpdateLevel(level);
+    }
 }

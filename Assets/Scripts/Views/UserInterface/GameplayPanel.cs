@@ -7,6 +7,8 @@ namespace Snake.Scripts.Views.UserInterface
     {
         [SerializeField]
         private Text _score;
+       
+        [SerializeField]
         private Text _level;
 
         private void Start()

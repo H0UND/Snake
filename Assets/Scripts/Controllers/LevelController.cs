@@ -1,6 +1,7 @@
 using AssemblyCSharp.Assets.Scripts.Models;
 using System.Collections.Generic;
 using UnityEngine;
+using Snake.Application;
 
 public class LevelController : MonoBehaviour
 {
@@ -51,6 +52,10 @@ public class LevelController : MonoBehaviour
         var level = _levels.Find(x => x.Level == _levelIndex);
 
         CurrentLevel = level;
+    }
+
+    private void Start()
+    {
         SetLevel(CurrentLevel);
     }
 
@@ -80,5 +85,6 @@ public class LevelController : MonoBehaviour
         var y = CurrentLevel.SunRotationY;
         var z = CurrentLevel.SunRotationZ;
         _light.transform.rotation = Quaternion.Euler(x, y, z);
+        Game.Instance.UpdateLevel(level.Level);
     }
 }
