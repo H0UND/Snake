@@ -29,6 +29,7 @@ public class UserInterface : MonoBehaviour
     {
         _losePanel?.ShowPanel();
     }
+
     public void ShowWinPanel()
     {
         _winPanel?.ShowPanel();

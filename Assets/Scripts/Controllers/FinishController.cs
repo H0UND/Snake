@@ -10,7 +10,7 @@ public class FinishController : MonoBehaviour
     {
         _audioSource.Play();
         var player = other.GetComponent<PlayerController>();
-        
+
         if (player == null)
             return;
 

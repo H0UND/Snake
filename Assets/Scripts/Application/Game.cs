@@ -27,7 +27,7 @@
         private int _level;
 
         [SerializeField]
-        LevelController _levelController;
+        private LevelController _levelController;
 
         [SerializeField]
         private AudioSource _loseSound;
@@ -84,7 +84,7 @@
         public void StartGame()
         {
             Debug.Log($"Current level:{_levelController.CurrentLevel.Name}");
-            
+
             SetGameStatus(GameStatus.InGame);
             //_ui.HideMainPanel();
             //_ui.ShowGameplayPanel();
@@ -115,7 +115,6 @@
             _level = level;
             _ui.UpdateLevel(_level);
         }
-
 
         public void SetGameStatus(GameStatus status)
         {

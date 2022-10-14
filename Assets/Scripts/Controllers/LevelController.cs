@@ -1,7 +1,7 @@
 using AssemblyCSharp.Assets.Scripts.Models;
+using Snake.Application;
 using System.Collections.Generic;
 using UnityEngine;
-using Snake.Application;
 
 public class LevelController : MonoBehaviour
 {

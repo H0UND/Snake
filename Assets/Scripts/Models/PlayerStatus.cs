@@ -1,6 +1,6 @@
 namespace Snake.Models
 {
-    public enum PlayerStatus 
+    public enum PlayerStatus
     {
         Stand,
         Walking,

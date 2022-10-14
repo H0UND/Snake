@@ -1,7 +1,5 @@
 using Snake.Application;
-using Snake.Models;
 using Snake.Scripts;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -104,27 +102,6 @@ public class PlayerController : MonoBehaviour
             float rightBorder = 6.0f;
 
             Walk(leftBorder, rightBorder);
-
-            //switch (PlayerStatus)
-            //{
-            //    case PlayerStatus.Stand:
-            //        break;
-
-            //    case PlayerStatus.Walking:
-
-            //        float leftBorder = -6.0f;
-            //        float rightBorder = 6.0f;
-
-            //        Walk(leftBorder, rightBorder);
-
-            //        break;
-
-            //    case PlayerStatus.Dead:
-            //        break;
-
-            //    default:
-            //        break;
-            //}
         }
     }
 

@@ -25,7 +25,7 @@ public class FoodController : MonoBehaviour
 
     private void Start()
     {
-        var textMesh = gameObject.GetComponentInChildren<TextMeshPro>(); 
+        var textMesh = gameObject.GetComponentInChildren<TextMeshPro>();
 
         int minInclusive = 1;
         int maxExclusive = 10;

@@ -7,7 +7,7 @@ namespace Snake.Scripts.Views.UserInterface
     {
         [SerializeField]
         private Text _score;
-       
+
         [SerializeField]
         private Text _level;
 
@@ -25,7 +25,7 @@ namespace Snake.Scripts.Views.UserInterface
         }
 
         public void UpdateLevel(int level)
-        { 
+        {
             _level.text = level.ToString();
         }
     }

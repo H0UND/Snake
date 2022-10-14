@@ -16,11 +16,13 @@ namespace Snake.Application
 
         [SerializeField]
         private MeshRenderer _meshRenderer;
+
         [SerializeField]
         private MeshRenderer _meshRendererTop;
 
         [SerializeField]
         private TextMeshPro _text;
+
         private readonly int MININCLUSIVE = 1;
         private readonly int MAXEXCLUSIVE = 20;
 
@@ -31,7 +33,6 @@ namespace Snake.Application
         {
             _hit = Random.Range(MININCLUSIVE, MAXEXCLUSIVE);
             _text.text = _hit.ToString();
-
 
             float x = _hit * 100f / MAXEXCLUSIVE;
             //_blockMaterial.color = new Color(0.01f * (100 - x), 0.01f * (100 - x), 0.01f * (100 - x));
