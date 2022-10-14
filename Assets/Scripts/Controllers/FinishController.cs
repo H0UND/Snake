@@ -3,8 +3,12 @@ using UnityEngine;
 
 public class FinishController : MonoBehaviour
 {
+    [SerializeField]
+    private AudioSource _audioSource;
+
     private void OnTriggerEnter(Collider other)
     {
+        _audioSource.Play();
         var player = other.GetComponent<PlayerController>();
         
         if (player == null)

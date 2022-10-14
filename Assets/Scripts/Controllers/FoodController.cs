@@ -20,6 +20,9 @@ public class FoodController : MonoBehaviour
     [SerializeField]
     private List<Mesh> _meshes;
 
+    [SerializeField]
+    private AudioSource _audioSource;
+
     private void Start()
     {
         var textMesh = gameObject.GetComponentInChildren<TextMeshPro>(); 
@@ -34,6 +37,7 @@ public class FoodController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        _audioSource.Play();
         //Debug.Log(other.name);
         other.GetComponent<PlayerController>().AddTail(_foodCount);
 

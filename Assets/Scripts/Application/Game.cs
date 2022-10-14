@@ -29,6 +29,9 @@
         [SerializeField]
         LevelController _levelController;
 
+        [SerializeField]
+        private AudioSource _loseSound;
+
         private void Start()
         {
             _score = 0;
@@ -68,6 +71,7 @@
 
             if (_gameStatus == GameStatus.Lose)
             {
+                _loseSound.Play();
                 _ui.ShowLosePanel();
             }
             else if (_gameStatus == GameStatus.Win)

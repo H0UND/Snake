@@ -85,6 +85,6 @@ public class LevelController : MonoBehaviour
         var y = CurrentLevel.SunRotationY;
         var z = CurrentLevel.SunRotationZ;
         _light.transform.rotation = Quaternion.Euler(x, y, z);
-        Game.Instance.UpdateLevel(level.Level);
+        Game.Instance.UpdateLevel(level.Level + 1);
     }
 }
